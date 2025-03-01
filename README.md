@@ -1,1 +1,1 @@
-# Resipe
+# Resipes
