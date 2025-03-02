@@ -1,147 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- HEAD SECTION IDENTICAL TO TEMPLATE -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="recipe from all variety of types and cultures"
+    />
+    <title>Classic Apple Pie</title>
+    <link rel="icon" type="svg" href="../images/icons/black cooking hat.svg" />
+    <link
+      rel="icon"
+      type="svg"
+      href="../images/icons/white cooking hat.svg"
+      media="(prefers-color-scheme:dark)"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script src="../js/menu.js" defer></script>
+    <script src="../js/switchclr.js" defer></script>
+    <script src="../js/animation.js" defer></script>
+  </head>
   <body>
-    <!-- HEADER IDENTICAL TO TEMPLATE -->
+    <header class="hidden">
+      <nav>
+        <div class="menuAndLogo">
+          <div class="menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <a href="#" class="logo">Recipe<span class="colored">•</span></a>
+        </div>
+        <ul>
+          <li>
+            <div class="user">
+              <img src="../images/icons/user.webp" alt="user" />
+            </div>
+          </li>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../index.html">RECIPES</a></li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/mohammed-abdi-tahir/"
+              target="_blank"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+        <div class="socialLinks">
+          <a
+            href="https://web.facebook.com/mohammed.abdi.71619533"
+            class="socialLink facebook"
+          >
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mohammed-abdi-tahir/"
+            class="socialLink linkedin"
+          >
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/yuuichi_sano/"
+            class="socialLink instagram"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
     <main>
       <section class="wrapper hidden">
-        <!-- RECIPE HEADER & IMAGE SECTION IDENTICAL TO TEMPLATE STRUCTURE -->
-
+        <section class="recipeHeader">
+          <div class="recipeDetail">
+            <h1>Classic Apple Pie</h1>
+            <div class="timeAndType">
+              <div class="timeNeeded container">
+                <i class="bx bxs-stopwatch"></i>
+                <div class="duration">
+                  <span>PREP TIME</span><span>45 Minutes</span>
+                </div>
+              </div>
+              <div class="timeNeeded container">
+                <i class="bx bxs-stopwatch"></i>
+                <div class="duration">
+                  <span>COOK TIME</span><span>1 Hour</span>
+                </div>
+              </div>
+              <div class="specificMealType container">
+                <i class="fa-solid fa-utensils"></i><span>Dessert</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="imageAndNutrition">
+          <img src="../images/food_samples/Apple_Pie.webp" alt="Apple Pie" />
+          <div class="nutrition">
+            <h4>Nutrition Information</h4>
+            <table>
+              <tr>
+                <td>Calories</td>
+                <td style="text-align: right">320 kcal</td>
+              </tr>
+              <tr>
+                <td>Total Fat</td>
+                <td style="text-align: right">14 g</td>
+              </tr>
+              <tr>
+                <td>Protein</td>
+                <td style="text-align: right">3 g</td>
+              </tr>
+              <tr>
+                <td>Carbohydrate</td>
+                <td style="text-align: right">48 g</td>
+              </tr>
+              <tr>
+                <td>Cholesterol</td>
+                <td style="text-align: right">20 mg</td>
+              </tr>
+            </table>
+          </div>
+        </section>
         <section class="description">
           <p>
-            A classic American dessert featuring tender, cinnamon-spiced apples
-            encased in a flaky, buttery double crust. This perfected recipe
-            balances sweet and tart flavors with a golden lattice finish that's
-            both visually stunning and deliciously crisp.
+            A timeless American dessert featuring a flaky, buttery crust filled
+            with tender cinnamon-spiced apples. Perfectly balanced between sweet
+            and tart, this pie is a crowd-pleaser for any occasion.
           </p>
         </section>
-
         <section class="ingredientAndRecommendations">
           <div class="ingredients">
             <h2>Ingredients</h2>
             <form>
               <label
-                ><input type="checkbox" /> 2 ½ lbs (1.1kg) Granny Smith
-                apples</label
+                ><input type="checkbox" class="customCheckbox" /> 2 ½ cups
+                (300g) all-purpose flour</label
               ><br />
               <label
-                ><input type="checkbox" /> ½ cup (100g) granulated sugar</label
+                ><input type="checkbox" class="customCheckbox" /> 1 tsp
+                salt</label
               ><br />
-              <!-- FULL INGREDIENT LIST -->
+              <label
+                ><input type="checkbox" class="customCheckbox" /> 1 cup (227g)
+                unsalted butter, chilled</label
+              ><br />
+              <label
+                ><input type="checkbox" class="customCheckbox" /> 6-8 Granny
+                Smith apples, peeled and sliced</label
+              ><br />
+              <label
+                ><input type="checkbox" class="customCheckbox" /> ¾ cup (150g)
+                granulated sugar</label
+              ><br />
+              <label
+                ><input type="checkbox" class="customCheckbox" /> 1 tbsp lemon
+                juice</label
+              ><br />
+              <label
+                ><input type="checkbox" class="customCheckbox" /> 2 tsp ground
+                cinnamon</label
+              ><br />
+              <label
+                ><input type="checkbox" class="customCheckbox" /> 1 egg (for egg
+                wash)</label
+              ><br />
             </form>
           </div>
-
           <div class="recommendations">
             <h4>You may also Like</h4>
             <div class="separate">
-              <!-- DESSERT RECOMMENDATIONS ONLY -->
-              <div class="recipe">
-                <a href="Peach_Crumble.html">
-                  <img
-                    src="../images/food_samples/Peach_Crumble.webp"
-                    alt="Peach Crumble"
-                  />
-                  <span class="title">Peach Crumble</span>
-                  <div class="mainIngredients">
-                    <span>Peaches, Oats, Brown Sugar</span>
-                  </div>
-                </a>
-              </div>
-
               <div class="recipe">
                 <a href="Chocolate_Cake.html">
                   <img
                     src="../images/food_samples/Chocolate_Cake.webp"
                     alt="Chocolate Cake"
+                    loading="lazy"
                   />
-                  <span class="title">Chocolate Layer Cake</span>
-                  <div class="mainIngredients">
-                    <span>Cocoa, Buttermilk, Flour</span>
+                  <div class="separate little">
+                    <span class="title">Chocolate Cake</span>
+                    <div class="mainIngredients">
+                      <span class="heading">Main Ingredients:</span>
+                      <div class="mainIngredientList">
+                        <span class="mainIngredient">Cocoa Powder</span>
+                        <span class="mainIngredient">Flour</span>
+                        <span class="mainIngredient">Eggs</span>
+                      </div>
+                    </div>
                   </div>
                 </a>
               </div>
-
               <div class="recipe">
                 <a href="Cheesecake.html">
                   <img
                     src="../images/food_samples/Cheesecake.webp"
                     alt="Cheesecake"
+                    loading="lazy"
                   />
-                  <span class="title">New York Cheesecake</span>
-                  <div class="mainIngredients">
-                    <span>Cream Cheese, Graham Crackers</span>
+                  <div class="separate little">
+                    <span class="title">Cheesecake</span>
+                    <div class="mainIngredients">
+                      <span class="heading">Main Ingredients:</span>
+                      <div class="mainIngredientList">
+                        <span class="mainIngredient">Cream Cheese</span>
+                        <span class="mainIngredient">Graham Crackers</span>
+                        <span class="mainIngredient">Sugar</span>
+                      </div>
+                    </div>
                   </div>
                 </a>
               </div>
-
               <div class="recipe">
-                <a href="French_Toast.html">
+                <a href="Peach_Crumble.html">
                   <img
-                    src="../images/food_samples/French_Toast.webp"
-                    alt="French Toast"
+                    src="../images/food_samples/Peach_Crumble.webp"
+                    alt="Peach Crumble"
+                    loading="lazy"
                   />
-                  <span class="title">Cinnamon French Toast</span>
-                  <div class="mainIngredients">
-                    <span>Brioche, Eggs, Maple Syrup</span>
+                  <div class="separate little">
+                    <span class="title">Peach Crumble</span>
+                    <div class="mainIngredients">
+                      <span class="heading">Main Ingredients:</span>
+                      <div class="mainIngredientList">
+                        <span class="mainIngredient">Peaches</span>
+                        <span class="mainIngredient">Oats</span>
+                        <span class="mainIngredient">Brown Sugar</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="recipe">
+                <a href="Banana_Bread.html">
+                  <img
+                    src="../images/food_samples/Banana_Bread.webp"
+                    alt="Banana Bread"
+                    loading="lazy"
+                  />
+                  <div class="separate little">
+                    <span class="title">Banana Bread</span>
+                    <div class="mainIngredients">
+                      <span class="heading">Main Ingredients:</span>
+                      <div class="mainIngredientList">
+                        <span class="mainIngredient">Bananas</span>
+                        <span class="mainIngredient">Flour</span>
+                        <span class="mainIngredient">Walnuts</span>
+                      </div>
+                    </div>
                   </div>
                 </a>
               </div>
             </div>
           </div>
         </section>
-
         <section class="instructionsAndAds">
           <div class="instructions">
-            <h2>Detailed Instructions</h2>
+            <h2>Instructions</h2>
             <dl>
               <dt>1. Prepare the Dough</dt>
               <dd>
-                <strong>Step 1:</strong> Cube 2 ½ sticks (283g) of unsalted
-                butter, freeze for 15 minutes. Whisk together 3 cups (360g)
-                all-purpose flour, 1 tbsp granulated sugar, and 1 tsp salt in
-                chilled bowl. <br /><br />
-                <strong>Step 2:</strong> Using pastry cutter, incorporate frozen
-                butter into flour until pea-sized pieces remain. Gradually add ½
-                cup (120ml) ice water, mixing until dough just comes together.
-                <br /><br />
-                <strong>Step 3:</strong> Divide dough into two disks, wrap in
-                parchment, refrigerate for 2 hours.
+                <strong>Step 1:</strong> Cut 1 cup (227g) of chilled butter into
+                small cubes. In a large bowl, whisk together flour and salt. Use
+                a pastry cutter to blend butter into the flour until pea-sized
+                crumbs form.<br /><br />
+                <strong>Step 2:</strong> Gradually add 6-8 tbsp ice water,
+                mixing until dough just comes together. Divide into two disks,
+                wrap in plastic, and refrigerate for 1 hour.
               </dd>
-
-              <dt>2. Make Apple Filling</dt>
+              <dt>2. Make the Filling</dt>
               <dd>
-                <strong>Step 1:</strong> Peel/core apples, slice into ¼" thick
-                wedges. Toss with ¾ cup (150g) brown sugar, ¼ cup (30g) flour, 2
-                tsp cinnamon, ½ tsp nutmeg, and 1 tbsp lemon juice. <br /><br />
-                <strong>Step 2:</strong> Let macerate 45 minutes, stirring every
-                15 minutes to develop juices.
+                <strong>Step 1:</strong> Peel and slice apples into ¼-inch thick
+                wedges. Toss with sugar, lemon juice, cinnamon, and 2 tbsp flour
+                in a large bowl. Let sit for 15 minutes.
               </dd>
-
               <dt>3. Assemble the Pie</dt>
               <dd>
-                <strong>Step 1:</strong> Roll bottom crust to 12" circle, line
-                9" pie dish. Trim edges leaving 1" overhang. Add filling, dot
-                with 2 tbsp butter. <br /><br />
-                <strong>Step 2:</strong> Create lattice top: Cut rolled top
-                crust into 1" strips using pastry wheel. Weave strips over
-                filling, alternating directions. Crimp edges with fork.
+                <strong>Step 1:</strong> Roll out one dough disk into a 12-inch
+                circle. Line a 9-inch pie dish, trimming excess edges. Add apple
+                filling and dot with 2 tbsp butter.<br /><br />
+                <strong>Step 2:</strong> Roll out the second dough disk and cut
+                into 1-inch strips. Weave strips over the filling in a lattice
+                pattern. Crimp edges with a fork.
               </dd>
-
-              <dt>4. Baking Process</dt>
+              <dt>4. Bake</dt>
               <dd>
-                <strong>Step 1:</strong> Brush crust with egg wash (1 egg + 1
-                tbsp milk). Sprinkle with turbinado sugar. Freeze pie 20
-                minutes. <br /><br />
-                <strong>Step 2:</strong> Bake at 425°F (220°C) for 25 minutes.
-                Reduce to 375°F (190°C), bake 50-60 minutes until bubbling and
-                golden. <br /><br />
-                <strong>Step 3:</strong> Cool completely on rack (4 hours
-                minimum) before slicing.
+                <strong>Step 1:</strong> Preheat oven to 425°F (220°C). Brush
+                lattice with egg wash (1 egg + 1 tbsp water). Sprinkle with
+                coarse sugar.<br /><br />
+                <strong>Step 2:</strong> Bake for 20 minutes, then reduce heat
+                to 375°F (190°C) and bake 40-50 minutes until golden and
+                bubbling. Cool completely before slicing.
               </dd>
             </dl>
+          </div>
+          <div class="ads">
+            <span><i class="fa-solid fa-rectangle-ad"></i>Advertisement</span>
+            <span><i class="fa-solid fa-rectangle-ad"></i>Advertisement</span>
+            <span><i class="fa-solid fa-rectangle-ad"></i>Advertisement</span>
           </div>
         </section>
       </section>
     </main>
+    <footer>
+      <span class="logo">Recipe</span>
+      <span>&copy;2025 | MOHAMMED ABDI</span>
+    </footer>
   </body>
 </html>
