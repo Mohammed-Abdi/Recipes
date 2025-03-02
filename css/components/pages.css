@@ -131,6 +131,7 @@
 
 .recommendations .recipe a {
   display: flex;
+  flex-direction: row;
   gap: 0.625rem;
 }
 
