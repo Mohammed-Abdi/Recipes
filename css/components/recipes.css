@@ -30,6 +30,12 @@ h4 {
   transition: all 0.3s ease-in-out;
 }
 
+.recipe a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
 .recipe:hover {
   transform: translateY(-0.625rem);
   box-shadow: 1px 2px 20px var(--shadow-clr);
