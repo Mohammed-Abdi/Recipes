@@ -38,7 +38,7 @@ nav .menuAndLogo {
   background: var(--secondary-clr);
 }
 
-.menuAndLogo .logo {
+.logo {
   font-size: 1.25rem;
   font-family: "lobster", sans-serif;
 }

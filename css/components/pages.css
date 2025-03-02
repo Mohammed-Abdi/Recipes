@@ -1,7 +1,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 2rem;
   padding-top: 2rem;
   margin-inline: auto;
 }
@@ -75,6 +75,13 @@
   border-bottom: none;
 }
 
+.wrapper h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 1.25rem;
+  text-align: start;
+}
+
 .wrapper h4 {
   font-size: 1.25rem;
   font-weight: 600;
@@ -89,10 +96,84 @@
   opacity: 0.7;
 }
 
+.ingredientAndRecommendations {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ingredientAndRecommendations .ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 50%;
+}
+
+.ingredientAndRecommendations .recommendations {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.recommendations .recipe {
+  width: 100%;
+  border-radius: 0.625rem;
+}
+
+.recommendations .recipe img {
+  width: 150px;
+  height: 100px;
+  border-radius: 0.3rem;
+}
+
+.recommendations .recipe a {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.recommendations .separate {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.recommendations .mainIngredients {
+  display: flex;
+  flex-direction: column;
+}
+
+.instructionsAndAds {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.instructionsAndAds .ads {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+  align-items: center;
+  width: 35%;
+}
+
+.instructionsAndAds .ads span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  height: 30%;
+  width: 100%;
+  border-radius: 1rem;
+  background: var(--shadow-clr);
+}
+
 .instructions {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  gap: 1.25rem;
+  width: 60%;
 }
 
 .wrapper form {
@@ -111,16 +192,12 @@ dt {
   font-weight: 600;
 }
 
-dd {
-  max-width: 60rem;
-}
-
 label {
   display: flex;
   column-gap: 1.25rem;
   align-items: center;
   padding-block: 0 1rem;
-  border-bottom: 1px solid var(--quaternary-clr);
+  border-bottom: 1px solid var(--shadow-clr);
 }
 
 label.checked {
@@ -162,7 +239,7 @@ label.checked {
   display: block;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 52rem) {
   .imageAndNutrition {
     flex-direction: column;
     justify-content: center;
@@ -175,5 +252,31 @@ label.checked {
   .imageAndNutrition .nutrition {
     width: 100%;
     background: var(--tertiary-clr);
+  }
+
+  .ingredientAndRecommendations {
+    justify-content: none;
+  }
+
+  .ingredientAndRecommendations .ingredients {
+    width: 100%;
+  }
+
+  .ingredientAndRecommendations .recommendations {
+    display: none;
+  }
+
+  .instructionsAndAds {
+    display: flex;
+    width: 100%;
+    justify-content: none;
+  }
+
+  .instructions {
+    width: 100%;
+  }
+
+  .instructionsAndAds .ads {
+    display: none;
   }
 }
