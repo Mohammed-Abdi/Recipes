@@ -11,3 +11,12 @@ checkboxes.forEach((checkbox) => {
     }
   });
 });
+
+//like
+const likeButtons = document.querySelectorAll(".recipe .like");
+
+likeButtons.forEach((button) => {
+  button.addEventListener("click", function () {
+    button.classList.toggle("active");
+  });
+});

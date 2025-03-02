@@ -52,11 +52,19 @@ h4 {
   position: absolute;
   right: 8%;
   top: 6.2%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.recipe .like:active {
+  transform: scale(1.25);
 }
 
 .recipe .like i {
-  font-size: 0.625rem;
+  font-size: 0.75rem;
   color: var(--quaternary-clr);
+}
+.recipe .like.active i {
+  color: var(--orange);
 }
 
 .recipe img {
