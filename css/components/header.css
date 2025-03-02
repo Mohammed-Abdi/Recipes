@@ -108,7 +108,7 @@ nav .socialLinks a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    box-shadow: 1px 2px var(--quaternary-clr);
+    width: 50vw;
     transform: translateX(-40rem);
     transition: all 0.3s ease-in-out;
     z-index: 99;
@@ -120,25 +120,22 @@ nav .socialLinks a:hover {
 
   nav ul li {
     padding-block: 1rem;
-    padding-inline: 1rem 3rem;
-    border-bottom: 1px solid var(--quaternary-clr);
+    padding-inline: 1.5rem 3rem;
+    border-bottom: 1px solid var(--shadow-clr);
   }
   nav ul .user {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    width: 100%;
   }
   nav ul .user img {
-    width: 6.25rem;
-    border-radius: 50%;
+    width: 100%;
     aspect-ratio: 1/1;
   }
   nav ul li:first-child {
     display: flex;
     font-size: 1.5rem;
+    padding: 0;
     background: var(--tertiary-clr);
-    padding-block: 1rem;
-    padding-inline: 1rem 4rem;
   }
   nav ul li:last-child {
     border-bottom: none;
