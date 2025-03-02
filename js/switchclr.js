@@ -15,8 +15,25 @@ checkboxes.forEach((checkbox) => {
 //like
 const likeButtons = document.querySelectorAll(".recipe .like");
 
-likeButtons.forEach((button) => {
+likeButtons.forEach((button, index) => {
+  const isLiked = localStorage.getItem(`like-${index}`) === "true";
+
+  if (isLiked) {
+    button.classList.add("active");
+  }
+
   button.addEventListener("click", function () {
-    button.classList.toggle("active");
+    const isActive = button.classList.toggle("active");
+    localStorage.setItem(`like-${index}`, isActive);
+  });
+});
+
+//categories
+document.querySelectorAll(".categories .choice").forEach((item) => {
+  item.addEventListener("click", () => {
+    document.querySelectorAll(".categories .choice").forEach((choice) => {
+      choice.classList.remove("active");
+    });
+    item.classList.add("active");
   });
 });

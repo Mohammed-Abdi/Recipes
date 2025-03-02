@@ -123,6 +123,10 @@
   border-radius: 0.625rem;
 }
 
+.recommendations .recipe:hover {
+  transform: none;
+}
+
 .recommendations .recipe img {
   width: 150px;
   height: 100px;
