@@ -37,3 +37,33 @@ document.querySelectorAll(".categories .choice").forEach((item) => {
     item.classList.add("active");
   });
 });
+
+//categories
+document.addEventListener("DOMContentLoaded", function () {
+  const categoryButtons = document.querySelectorAll(".categories .choice");
+  const recipeCards = document.querySelectorAll(".recipe");
+
+  function filterRecipes(category) {
+    recipeCards.forEach((recipe) => {
+      if (category === "All" || recipe.classList.contains(category)) {
+        recipe.style.display = "block";
+      } else {
+        recipe.style.display = "none";
+      }
+    });
+  }
+
+  categoryButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      categoryButtons.forEach((btn) => btn.classList.remove("active"));
+
+      this.classList.add("active");
+
+      const selectedCategory = this.getAttribute("data-category");
+
+      filterRecipes(selectedCategory);
+    });
+  });
+
+  filterRecipes("All");
+});

@@ -36,11 +36,6 @@
   transform: translateY(-0.25rem);
 }
 
-.categories .choice.active {
-  background: var(--secondary-clr);
-  color: var(--primary-clr);
-}
-
 h1 {
   font-size: 35px;
   font-weight: 700;
