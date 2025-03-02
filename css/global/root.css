@@ -1,0 +1,14 @@
+:root {
+  --primary-clr: #fff;
+  --secondary-clr: #000;
+  --tertiary-clr: #f2fdff;
+  --quaternary-clr: #0000004c;
+  --shadow-clr: #00000014;
+  --orange: #ff6363;
+  --red: #ff00002f;
+  --green: #1aff002f;
+  --yellow: #ffff002f;
+  --max-width: 80rem;
+  --wrapper-max-width: 65rem;
+  --global-padding: 1.25rem;
+}

@@ -1,0 +1,9 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.375rem 1.875rem;
+  width: 100%;
+  font-size: 0.75rem;
+  opacity: 0.5;
+}

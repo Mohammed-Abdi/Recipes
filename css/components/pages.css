@@ -1,0 +1,179 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-top: 2rem;
+  margin-inline: auto;
+}
+
+.recipeHeader {
+  display: flex;
+  width: 100%;
+}
+
+.recipeDetail .timeAndType {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.timeAndType .container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.65rem;
+  font-weight: 500;
+  border-right: 1px solid var(--secondary-clr);
+  padding-right: 1rem;
+  opacity: 0.8;
+}
+
+.timeAndType .container i {
+  font-size: 1rem;
+}
+.timeAndType .container:last-child {
+  border-right: none;
+}
+
+.container .duration {
+  display: flex;
+  flex-direction: column;
+  gap: 0.315rem;
+}
+
+.imageAndNutrition {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.imageAndNutrition img {
+  width: 70%;
+  border-radius: 20px;
+}
+
+.imageAndNutrition .nutrition {
+  width: 28%;
+  background: var(--tertiary-clr);
+  padding: 1.25rem;
+  border-radius: 20px;
+}
+
+.nutrition table {
+  width: 100%;
+  background: var(--tertiary-clr);
+}
+
+.nutrition tr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--quaternary-clr);
+  padding-block: 1rem;
+}
+
+.nutrition tr:last-child {
+  border-bottom: none;
+}
+
+.wrapper h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-bottom: 1.25rem;
+  text-align: start;
+}
+
+.description p {
+  text-align: center;
+  max-width: 70rem;
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+
+.instructions {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.wrapper form {
+  display: flex;
+  flex-direction: column;
+}
+
+dl {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+dt {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+dd {
+  max-width: 60rem;
+}
+
+label {
+  display: flex;
+  column-gap: 1.25rem;
+  align-items: center;
+  padding-block: 0 1rem;
+  border-bottom: 1px solid var(--quaternary-clr);
+}
+
+label.checked {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.customCheckbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  font-size: 0;
+}
+
+.customCheckbox::after {
+  content: "";
+  font-family: "boxicons";
+  font-size: 16px;
+  color: white;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.customCheckbox:checked {
+  background-color: black;
+}
+
+.customCheckbox:checked::after {
+  content: "\2713";
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .imageAndNutrition {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+  .imageAndNutrition img {
+    width: 100%;
+  }
+
+  .imageAndNutrition .nutrition {
+    width: 100%;
+    background: var(--tertiary-clr);
+  }
+}

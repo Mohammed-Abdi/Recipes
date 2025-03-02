@@ -1,0 +1,146 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding-block: 1rem;
+  background: var(--primary-clr);
+  z-index: 99;
+}
+header.hidden {
+  transform: translateY(-1rem);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: auto;
+  width: min(var(--max-width), 100% - (var(--global-padding) * 2));
+}
+
+nav .menuAndLogo {
+  display: flex;
+  align-items: center;
+  margin-top: -0.5rem;
+}
+
+.menuAndLogo .menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  padding: 1rem 1.25rem;
+}
+
+.menu .bar {
+  width: 1rem;
+  height: 2px;
+  background: var(--secondary-clr);
+}
+
+.menuAndLogo .logo {
+  font-size: 1.25rem;
+  font-family: "lobster", sans-serif;
+}
+
+.colored {
+  color: var(--tertiary-clr);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transform: translateX(1.5rem);
+}
+
+nav ul li:first-child {
+  display: none;
+}
+
+nav ul a {
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul a:hover {
+  opacity: 0.5;
+}
+
+nav .socialLinks {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .socialLinks a:hover {
+  opacity: 0.7;
+}
+
+.socialLinks i {
+  font-size: 1.125rem;
+}
+
+@media (max-width: 540px) {
+  header {
+    padding-block: 0.635rem;
+  }
+  .menuAndLogo .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    padding: 1rem 1.25rem;
+    margin-left: -1.25rem;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    list-style: none;
+    background: var(--primary-clr);
+    font-size: 0.875rem;
+    font-weight: 500;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 2px var(--quaternary-clr);
+    transform: translateX(-40rem);
+    transition: all 0.3s ease-in-out;
+    z-index: 99;
+  }
+
+  nav ul.active {
+    transform: translateX(0);
+  }
+
+  nav ul li {
+    padding-block: 1rem;
+    padding-inline: 1rem 3rem;
+    border-bottom: 1px solid var(--quaternary-clr);
+  }
+  nav ul .user {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  nav ul .user img {
+    width: 6.25rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+  }
+  nav ul li:first-child {
+    display: flex;
+    font-size: 1.5rem;
+    background: var(--tertiary-clr);
+    padding-block: 1rem;
+    padding-inline: 1rem 4rem;
+  }
+  nav ul li:last-child {
+    border-bottom: none;
+  }
+}
