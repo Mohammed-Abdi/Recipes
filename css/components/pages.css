@@ -249,7 +249,7 @@ label.checked {
 }
 
 .customCheckbox:checked::after {
-  content: "\2714";
+  content: "\2713";
   display: block;
 }
 
