@@ -9,8 +9,10 @@ menu.addEventListener("click", () => {
 
 nav.addEventListener("click", () => {
   nav.classList.remove("active");
+  menu.classList.remove("active");
 });
 
 main.addEventListener("click", () => {
   nav.classList.remove("active");
+  menu.classList.remove("active");
 });

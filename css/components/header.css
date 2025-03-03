@@ -72,6 +72,7 @@ nav ul {
 
 nav ul a {
   display: flex;
+  align-items: center;
   gap: 0.625rem;
   transition: all 0.3s ease-in-out;
 }
@@ -136,6 +137,6 @@ nav .socialLinks a:hover {
     padding-inline: 1.25rem 3rem;
   }
   nav ul a i {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 }
