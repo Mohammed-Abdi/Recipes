@@ -1,8 +1,0 @@
-.categories .choice.active {
-  background: var(--secondary-clr);
-  color: var(--primary-clr);
-}
-
-.choice:nth-child(1).active .Meat {
-  display: none;
-}

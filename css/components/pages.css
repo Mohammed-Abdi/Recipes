@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
-  padding: 1rem;
+  padding-block: 1rem;
 }
 
 .timeAndType .container {
@@ -70,7 +70,7 @@
 .nutrition tr {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid var(--quaternary-clr);
+  border-bottom: 1px solid var(--shadow-clr);
   padding-block: 1rem;
 }
 
@@ -249,7 +249,7 @@ label.checked {
 }
 
 .customCheckbox:checked::after {
-  content: "\2713";
+  content: "\2714";
   display: block;
 }
 
