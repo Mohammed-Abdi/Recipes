@@ -27,10 +27,10 @@ nav .menuAndLogo {
 .menuAndLogo .menu {
   display: none;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   gap: 2px;
-  padding: 1rem 1.25rem;
-  padding-right: 0.625rem;
+  padding-block: 1rem;
+  padding-inline: 1.25rem 0.625rem;
 }
 
 .menu .bar {
@@ -106,10 +106,6 @@ nav .socialLinks a:hover {
   }
   .menuAndLogo .menu {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2px;
-    padding: 1rem 1.25rem;
     margin-left: -1.25rem;
   }
 
