@@ -30,6 +30,7 @@ nav .menuAndLogo {
   justify-content: center;
   gap: 2px;
   padding: 1rem 1.25rem;
+  padding-right: 0.625rem;
 }
 
 .menu .bar {
