@@ -4,6 +4,7 @@ const main = document.querySelector("main");
 
 menu.addEventListener("click", () => {
   nav.classList.toggle("active");
+  menu.classList.toggle("active");
 });
 
 nav.addEventListener("click", () => {

@@ -36,6 +36,19 @@ nav .menuAndLogo {
   width: 1rem;
   height: 2px;
   background: var(--secondary-clr);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(3px, 3px);
+}
+
+.menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(3px, -3px);
 }
 
 .logo {
@@ -56,12 +69,15 @@ nav ul {
   transform: translateX(1rem);
 }
 
-nav ul li:first-child {
-  display: none;
+nav ul a {
+  display: flex;
+  gap: 0.625rem;
+  transition: all 0.3s ease-in-out;
 }
 
-nav ul a {
-  transition: all 0.3s ease-in-out;
+nav ul a i {
+  font-size: 0;
+  opacity: 0.7;
 }
 
 nav ul a:hover {
@@ -106,9 +122,9 @@ nav .socialLinks a:hover {
     font-weight: 500;
     height: 100vh;
     position: absolute;
-    top: 0;
+    top: 3.5rem;
     left: 0;
-    width: 50vw;
+    width: 40vw;
     transform: translateX(-40rem);
     transition: all 0.3s ease-in-out;
     z-index: 99;
@@ -120,24 +136,9 @@ nav .socialLinks a:hover {
 
   nav ul li {
     padding-block: 1rem;
-    padding-inline: 1.5rem 3rem;
-    border-bottom: 1px solid var(--shadow-clr);
+    padding-inline: 1.25rem 3rem;
   }
-  nav ul .user {
-    display: flex;
-    width: 100%;
-  }
-  nav ul .user img {
-    width: 100%;
-    aspect-ratio: 1/1;
-  }
-  nav ul li:first-child {
-    display: flex;
-    font-size: 1.5rem;
-    padding: 0;
-    background: var(--tertiary-clr);
-  }
-  nav ul li:last-child {
-    border-bottom: none;
+  nav ul a i {
+    font-size: 1rem;
   }
 }
