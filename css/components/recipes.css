@@ -26,6 +26,7 @@ h4 {
 .recipes .recipe a {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   position: absolute;
   gap: 0.5rem;
   top: 0;
@@ -36,7 +37,6 @@ h4 {
   background: linear-gradient(180deg, transparent, #000);
   border-radius: 0.5rem;
   padding: 0.625rem;
-  padding-top: 90px;
 }
 
 .recipe:hover {
