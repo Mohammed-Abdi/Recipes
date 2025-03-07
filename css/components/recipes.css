@@ -18,7 +18,7 @@ h4 {
 }
 
 .recipes .recipe {
-  width: 17.5rem;
+  width: 17rem;
   position: relative;
   transition: all 0.3s ease-in-out;
 }
