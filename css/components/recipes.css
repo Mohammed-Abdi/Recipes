@@ -17,29 +17,30 @@ h4 {
   gap: 1.25rem;
 }
 
-.recipe {
-  display: flex;
-  flex-direction: column;
+.recipes .recipe {
   width: 17.5rem;
-  background: var(--primary-clr);
-  padding: 0.625rem;
-  border-radius: 0.625rem;
-  gap: 0.625rem;
   position: relative;
-  border: 1px solid var(--shadow-clr);
-  box-shadow: 0.1px 0.2px 10px var(--shadow-clr);
   transition: all 0.3s ease-in-out;
 }
 
-.recipe a {
+.recipes .recipe a {
   display: flex;
   flex-direction: column;
-  gap: 0.625rem;
+  position: absolute;
+  gap: 0.5rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--secondary-clr);
+  background: linear-gradient(180deg, transparent, #000);
+  border-radius: 0.5rem;
+  padding: 0.625rem;
+  padding-top: 90px;
 }
 
 .recipe:hover {
   transform: translateY(-0.625rem);
-  box-shadow: 1px 2px 20px var(--shadow-clr);
 }
 
 .recipe .like {
@@ -49,12 +50,13 @@ h4 {
   width: 1.6rem;
   height: 1.6rem;
   border-radius: 50%;
-  background: var(--primary-clr);
+  background: var(--secondary-clr);
   position: absolute;
-  right: 8%;
-  top: 6.2%;
+  right: 0.625rem;
+  top: 5%;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
 .recipe .like:active {
   transform: scale(1.25);
@@ -62,20 +64,20 @@ h4 {
 
 .recipe .like i {
   font-size: 0.75rem;
-  color: var(--shadow-clr);
+  color: var(--unLiked);
+  z-index: 2;
 }
 .recipe .like.active i {
-  color: var(--orange);
+  color: var(--liked);
 }
 
 .recipe img {
-  border-radius: 0.3125rem;
+  border-radius: 0.5rem;
   width: 100%;
 }
 
 .recipe .title {
-  font-weight: 600;
-  min-height: 2.5rem;
+  font-weight: 700;
 }
 
 .recipe .mainIngredients {
@@ -92,15 +94,12 @@ h4 {
 .mainIngredients .mainIngredientList {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.3rem;
+  gap: 1rem;
 }
 
 .mainIngredientList .mainIngredient {
   font-size: 0.75rem;
   font-weight: 600;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.75rem;
-  border: 1px solid var(--shadow-clr);
 }
 
 .recipe .info {

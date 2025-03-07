@@ -64,7 +64,6 @@
 
 .nutrition table {
   width: 100%;
-  background: var(--tertiary-clr);
 }
 
 .nutrition tr {
@@ -223,7 +222,7 @@ label.checked {
   appearance: none;
   width: 20px;
   height: 20px;
-  border: 2px solid black;
+  border: 2px solid var(--secondary-clr);
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -236,7 +235,7 @@ label.checked {
   content: "";
   font-family: "boxicons";
   font-size: 16px;
-  color: white;
+  color: var(--primary-clr);
   display: none;
   position: absolute;
   top: 50%;
@@ -245,7 +244,7 @@ label.checked {
 }
 
 .customCheckbox:checked {
-  background-color: black;
+  background: var(--secondary-clr);
 }
 
 .customCheckbox:checked::after {

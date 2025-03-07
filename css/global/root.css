@@ -1,9 +1,10 @@
 :root {
-  --primary-clr: #fff;
-  --secondary-clr: #000;
-  --tertiary-clr: #f2fdff;
-  --shadow-clr: #00000023;
-  --orange: #ff3838;
+  --primary-clr: #000;
+  --secondary-clr: #fff;
+  --tertiary-clr: #f2fdff29;
+  --shadow-clr: #ffffff3a;
+  --liked: #ff3838;
+  --unLiked: #cccccc;
   --max-width: 80rem;
   --wrapper-max-width: 65rem;
   --global-padding: 1.25rem;
