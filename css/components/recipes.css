@@ -19,6 +19,9 @@ h4 {
 
 .recipes .recipe {
   width: 17rem;
+  aspect-ratio: 3/2;
+  background: gray;
+  border-radius: 0.5rem;
   position: relative;
   transition: all 0.3s ease-in-out;
 }
@@ -74,6 +77,7 @@ h4 {
 .recipe img {
   border-radius: 0.5rem;
   width: 100%;
+  aspect-ratio: 3/2;
 }
 
 .recipe .title {
